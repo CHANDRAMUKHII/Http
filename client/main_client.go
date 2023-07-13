@@ -15,7 +15,6 @@ type Patient struct {
 }
 
 func main() {
-	fmt.Print("Hiii")
 	var average time.Duration
 	for i := 0; i < 3; i++ {
 		startTime := time.Now()

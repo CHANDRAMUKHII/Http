@@ -19,7 +19,7 @@ func PrintJson() {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10000*time.Second)
 	defer cancel()
-	collection := client.Database("crud").Collection("patients")
+	collection := Client.Database("crud").Collection("patients")
 	cursor, _ := collection.Find(ctx, bson.M{})
 	var patients []Patientid
 	fmt.Print("Fetched data")
